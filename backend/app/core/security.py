@@ -4,6 +4,10 @@
 from passlib.context import CryptContext
 from jose import jwt
 from datetime import datetime, timedelta
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Password hashing
 pwd_context = CryptContext(
@@ -12,9 +16,9 @@ pwd_context = CryptContext(
 )
 
 # JWT settings
-SECRET_KEY = "your-super-secret-key-change-later"
-ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = 60
+SECRET_KEY = os.getenv("SECRET_KEY")
+ALGORITHM = os.getenv("ALGORITHM")
+ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES"))
 
 # Functions for password hashing and JWT token creation
 def hash_password(password: str) -> str:

@@ -1,3 +1,5 @@
+#signup page and login logic
+
 from sqlalchemy.orm import Session
 
 from app.database.models import User
@@ -38,5 +40,5 @@ def login(db: Session, user_data: UserLogin) -> dict:
     if not user or not verify_password(user_data.password, user.hashed_password):
         raise ValueError("Invalid email or password")
 
-    token = create_access_token({"sub": user.email})
+    token = create_access_token( data={"sub": str(user.id)})
     return {"access_token": token, "token_type": "bearer"}
