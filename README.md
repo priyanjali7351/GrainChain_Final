@@ -102,3 +102,4 @@ ADD COLUMN longitude double precision;
 ---
 
 **If you use a migration tool or have a migrations folder, add this migration there as well.** 
+echo '# CI/CD enabled' >> README.md
