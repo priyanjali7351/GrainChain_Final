@@ -2,13 +2,17 @@
 
 # dependencies
 /node_modules
+**/node_modules
 
 # next.js
 /.next/
+/frontend/.next/
 /out/
+/frontend/out/
 
 # production
 /build
+/frontend/build
 
 # debug
 npm-debug.log*

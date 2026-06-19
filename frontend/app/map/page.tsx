@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import FoodMap from "@/components/map/food-map"
+import FoodMap from "@/components/map/food-map-wrapper"
 import HeatmapView from "@/components/map/heatmap-view"
 import RouteOptimization from "@/components/map/route-optimization"
 

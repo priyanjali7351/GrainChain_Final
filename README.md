@@ -37,14 +37,14 @@ GrainChain is a platform for food donation and redistribution, connecting donors
    pnpm install
    ```
 3. **Set up environment variables:**
-   - If using Supabase or other backend services, create a `.env.local` file and add your keys as needed (see `lib/supabaseClient.ts`).
+   - If using Supabase or other backend services, create a `frontend/.env.local` file and add your keys as needed (see `frontend/lib/supabaseClient.ts`).
    - For development/testing, the app uses OpenStreetMap Nominatim for geocoding (no API key required, but subject to rate limits).
 
 ### Running the App
 ```sh
 npm run dev
 # or
-pnpm dev
+npm --workspace frontend run dev
 ```
 - The app will be available at `http://localhost:3000`.
 

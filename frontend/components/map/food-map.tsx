@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react"
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet"
-import "leaflet/dist/leaflet.css"
 import { fetchDonations } from "@/lib/datafetching"
 import { LatLngExpression } from "leaflet"
 
