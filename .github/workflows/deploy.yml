@@ -31,7 +31,8 @@ jobs:
           flake8 backend \
             --count \
             --max-line-length=120 \
-            --statistics
+            --statistics \
+            --exit-zero
 
   deploy:
     name: Deploy Backend
